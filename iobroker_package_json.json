@@ -6,7 +6,7 @@
     "name": "Your Name",
     "email": "your.email@example.com"
   },
-  "homepage": "https://github.com/yourusername/ioBroker.solar-calculator",
+  "homepage": "https://github.com/cschulz15/ioBroker.solar-calculator",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/ioBroker.solar-calculator"
+    "url": "https://github.com/cschulz15/ioBroker.solar-calculator"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -40,5 +40,5 @@
   "bugs": {
     "url": "https://github.com/yourusername/ioBroker.solar-calculator/issues"
   },
-  "readmeFilename": "README.md"
+  "readmeFilename": "iobroker_readme.md"
 }
