@@ -32,7 +32,7 @@
     "icon": "solar-calculator.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/cschulz15/ioBroker.solar-calculator/master/admin/solar-calculator.png",
-    "readme": "https://github.com/cschulz15/ioBroker.solar-calculator/blob/master/iobroker_readme.md",
+    "readme": "https://github.com/cschulz15/ioBroker.solar-calculator/blob/master/README.md",
     "loglevel": "info",
     "mode": "daemon",
     "type": "energy",
