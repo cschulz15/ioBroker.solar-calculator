@@ -1,0 +1,44 @@
+{
+  "name": "iobroker.solar-calculator",
+  "version": "1.0.0",
+  "description": "Solar panel calculation adapter for ioBroker",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "homepage": "https://github.com/yourusername/ioBroker.solar-calculator",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "solar",
+    "calculator",
+    "sun",
+    "photovoltaic",
+    "PV"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ioBroker.solar-calculator"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^2.6.0"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^2.5.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run test:js && npm run test:package",
+    "test:js": "mocha --timeout 10000",
+    "test:package": "node node_modules/@iobroker/testing/lib/integration/lib/validatePackageFiles.js"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ioBroker.solar-calculator/issues"
+  },
+  "readmeFilename": "README.md"
+}

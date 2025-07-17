@@ -1,0 +1,106 @@
+{
+  "common": {
+    "name": "solar-calculator",
+    "version": "1.0.0",
+    "news": {
+      "1.0.0": {
+        "en": "Initial release",
+        "de": "Erstveröffentlichung"
+      }
+    },
+    "titleLang": {
+      "en": "Solar Calculator",
+      "de": "Solar-Rechner"
+    },
+    "desc": {
+      "en": "Calculate solar panel sun exposure times with daylight saving time support",
+      "de": "Berechnet Sonneneinstrahlung auf Solaranlagen mit Sommer-/Winterzeit-Unterstützung"
+    },
+    "authors": [
+      "Your Name <your.email@example.com>"
+    ],
+    "keywords": [
+      "solar",
+      "sun",
+      "photovoltaic",
+      "PV",
+      "calculator"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "solar-calculator.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/yourusername/ioBroker.solar-calculator/master/admin/solar-calculator.png",
+    "readme": "https://github.com/yourusername/ioBroker.solar-calculator/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "energy",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "materialize": true,
+    "tier": 2,
+    "supportCustoms": false,
+    "dependencies": [
+      {
+        "js-controller": ">=2.0.0"
+      }
+    ]
+  },
+  "native": {
+    "latitude": 53.55,
+    "longitude": 10.0,
+    "roofAzimuth": 180,
+    "roofTilt": 30,
+    "maxIncidenceAngle": 60
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "config",
+      "type": "channel",
+      "common": {
+        "name": "Configuration"
+      },
+      "native": {}
+    },
+    {
+      "_id": "current",
+      "type": "channel",
+      "common": {
+        "name": "Current Values"
+      },
+      "native": {}
+    },
+    {
+      "_id": "today",
+      "type": "channel",
+      "common": {
+        "name": "Today's Values"
+      },
+      "native": {}
+    }
+  ]
+}
