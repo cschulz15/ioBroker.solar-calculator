@@ -102,6 +102,3 @@ const maxPower = 5000; // 5kW Anlage
 const currentPower = sunOnRoof ? maxPower * efficiency : 0;
 ```
 
-### Visualisierung
-
-Die Werte
